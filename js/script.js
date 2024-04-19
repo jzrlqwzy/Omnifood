@@ -29,6 +29,7 @@ const observer = new IntersectionObserver(
     // In the viewport
     root: null,
     threshold: 0,
+    rootMargin: "-80px",
   }
 );
 observer.observe(sectionHeroEl);
