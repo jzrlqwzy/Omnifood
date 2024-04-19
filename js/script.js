@@ -24,6 +24,9 @@ const observer = new IntersectionObserver(
     if (!ent.isIntersecting) {
       document.body.classList.add("sticky");
     }
+    if (ent.isIntersecting) {
+      document.body.classList.remove("sticky");
+    }
   },
   {
     // In the viewport
