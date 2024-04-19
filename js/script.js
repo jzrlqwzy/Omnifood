@@ -22,7 +22,7 @@ const observer = new IntersectionObserver(
     const ent = entries[0];
     console.log(ent);
     if (!ent.isIntersecting) {
-      document.querySelector(".header").classList.add("sticky");
+      document.body.classList.add("sticky");
     }
   },
   {
