@@ -68,7 +68,9 @@ html {
   */
   font-size: 62.5%;
   overflow-x: hidden;
-  scroll-behavior: smooth;
+
+  /* Smooth Scrolling Animation in CSS way*/
+  /* scroll-behavior: smooth; */
 }
 
 body {
