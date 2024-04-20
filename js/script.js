@@ -9,7 +9,6 @@ btnNavEl.addEventListener("click", function () {
 ///////////////////////////////////////////////////////////
 // Smooth Scrolling Animation in JS way
 const allLinks = document.querySelectorAll("a:link");
-console.log(allLinks);
 allLinks.forEach((link) =>
   link.addEventListener("click", function (e) {
     e.preventDefault();
@@ -43,7 +42,6 @@ const sectionHeroEl = document.querySelector(".section-hero");
 const observer = new IntersectionObserver(
   function (entries) {
     const ent = entries[0];
-    console.log(ent);
     if (!ent.isIntersecting) {
       document.body.classList.add("sticky");
     }
@@ -74,7 +72,6 @@ function checkFlexGap() {
   document.body.appendChild(flex);
   var isSupported = flex.scrollHeight === 1;
   flex.parentNode.removeChild(flex);
-  console.log(isSupported);
 
   if (!isSupported) document.body.classList.add("no-flexbox-gap");
 }
