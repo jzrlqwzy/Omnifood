@@ -7,7 +7,7 @@ btnNavEl.addEventListener("click", function () {
 });
 
 ///////////////////////////////////////////////////////////
-// Smooth Scrolling Animation in JS way
+// Smooth Scrolling A nimation in JS way
 const allLinks = document.querySelectorAll("a:link");
 allLinks.forEach((link) =>
   link.addEventListener("click", function (e) {
@@ -50,7 +50,7 @@ const observer = new IntersectionObserver(
     }
   },
   {
-    // In the viewport
+    // `null` means in the viewport
     root: null,
     threshold: 0,
     rootMargin: "-80px",
